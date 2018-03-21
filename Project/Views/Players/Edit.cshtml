@@ -1,0 +1,246 @@
+﻿@model Project.Models.Player
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+ <img src="@Html.DisplayFor(model => model.Picture)" />
+
+<h3>@Html.DisplayFor(model => model.Name)</h3>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="GamesPlayed" class="control-label"></label>
+                <input asp-for="GamesPlayed" class="form-control" />
+                <span asp-validation-for="GamesPlayed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Goals" class="control-label"></label>
+                <input asp-for="Goals" class="form-control" />
+                <span asp-validation-for="Goals" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Assists" class="control-label"></label>
+                <input asp-for="Assists" class="form-control" />
+                <span asp-validation-for="Assists" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MatchRating" class="control-label"></label>
+                <input asp-for="MatchRating" class="form-control" />
+                <span asp-validation-for="MatchRating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OwnGoals" class="control-label"></label>
+                <input asp-for="OwnGoals" class="form-control" />
+                <span asp-validation-for="OwnGoals" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShotsOnTarget" class="control-label"></label>
+                <input asp-for="ShotsOnTarget" class="form-control" />
+                <span asp-validation-for="ShotsOnTarget" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShotsOffTarget" class="control-label"></label>
+                <input asp-for="ShotsOffTarget" class="form-control" />
+                <span asp-validation-for="ShotsOffTarget" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PassesCompletedS" class="control-label"></label>
+                <input asp-for="PassesCompletedS" class="form-control" />
+                <span asp-validation-for="PassesCompletedS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PassesCompletedM" class="control-label"></label>
+                <input asp-for="PassesCompletedM" class="form-control" />
+                <span asp-validation-for="PassesCompletedM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PassesCompletedL" class="control-label"></label>
+                <input asp-for="PassesCompletedL" class="form-control" />
+                <span asp-validation-for="PassesCompletedL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PassesFailedS" class="control-label"></label>
+                <input asp-for="PassesFailedS" class="form-control" />
+                <span asp-validation-for="PassesFailedS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PassesFailedM" class="control-label"></label>
+                <input asp-for="PassesFailedM" class="form-control" />
+                <span asp-validation-for="PassesFailedM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PassesFailedL" class="control-label"></label>
+                <input asp-for="PassesFailedL" class="form-control" />
+                <span asp-validation-for="PassesFailedL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CrossesCompleted" class="control-label"></label>
+                <input asp-for="CrossesCompleted" class="form-control" />
+                <span asp-validation-for="CrossesCompleted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CrossesFailed" class="control-label"></label>
+                <input asp-for="CrossesFailed" class="form-control" />
+                <span asp-validation-for="CrossesFailed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KeyPasses" class="control-label"></label>
+                <input asp-for="KeyPasses" class="form-control" />
+                <span asp-validation-for="KeyPasses" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DribblesCompleted" class="control-label"></label>
+                <input asp-for="DribblesCompleted" class="form-control" />
+                <span asp-validation-for="DribblesCompleted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DribblesAttempted" class="control-label"></label>
+                <input asp-for="DribblesAttempted" class="form-control" />
+                <span asp-validation-for="DribblesAttempted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KeyDribbles" class="control-label"></label>
+                <input asp-for="KeyDribbles" class="form-control" />
+                <span asp-validation-for="KeyDribbles" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OneOnOneDribbles" class="control-label"></label>
+                <input asp-for="OneOnOneDribbles" class="form-control" />
+                <span asp-validation-for="OneOnOneDribbles" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fouled" class="control-label"></label>
+                <input asp-for="Fouled" class="form-control" />
+                <span asp-validation-for="Fouled" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TacklesWon" class="control-label"></label>
+                <input asp-for="TacklesWon" class="form-control" />
+                <span asp-validation-for="TacklesWon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TacklesAttempted" class="control-label"></label>
+                <input asp-for="TacklesAttempted" class="form-control" />
+                <span asp-validation-for="TacklesAttempted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fouls" class="control-label"></label>
+                <input asp-for="Fouls" class="form-control" />
+                <span asp-validation-for="Fouls" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PensConceded" class="control-label"></label>
+                <input asp-for="PensConceded" class="form-control" />
+                <span asp-validation-for="PensConceded" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Interceptions" class="control-label"></label>
+                <input asp-for="Interceptions" class="form-control" />
+                <span asp-validation-for="Interceptions" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OutOfPosition" class="control-label"></label>
+                <input asp-for="OutOfPosition" class="form-control" />
+                <span asp-validation-for="OutOfPosition" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Blocks" class="control-label"></label>
+                <input asp-for="Blocks" class="form-control" />
+                <span asp-validation-for="Blocks" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PossessionWon" class="control-label"></label>
+                <input asp-for="PossessionWon" class="form-control" />
+                <span asp-validation-for="PossessionWon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PossessionLost" class="control-label"></label>
+                <input asp-for="PossessionLost" class="form-control" />
+                <span asp-validation-for="PossessionLost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clearances" class="control-label"></label>
+                <input asp-for="Clearances" class="form-control" />
+                <span asp-validation-for="Clearances" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HeadersWon" class="control-label"></label>
+                <input asp-for="HeadersWon" class="form-control" />
+                <span asp-validation-for="HeadersWon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HeadersLost" class="control-label"></label>
+                <input asp-for="HeadersLost" class="form-control" />
+                <span asp-validation-for="HeadersLost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GoalsConceded" class="control-label"></label>
+                <input asp-for="GoalsConceded" class="form-control" />
+                <span asp-validation-for="GoalsConceded" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShotsCaught" class="control-label"></label>
+                <input asp-for="ShotsCaught" class="form-control" />
+                <span asp-validation-for="ShotsCaught" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShotsParried" class="control-label"></label>
+                <input asp-for="ShotsParried" class="form-control" />
+                <span asp-validation-for="ShotsParried" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CrossesCaught" class="control-label"></label>
+                <input asp-for="CrossesCaught" class="form-control" />
+                <span asp-validation-for="CrossesCaught" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BallsStripped" class="control-label"></label>
+                <input asp-for="BallsStripped" class="form-control" />
+                <span asp-validation-for="BallsStripped" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CleanSheets" class="control-label"></label>
+                <input asp-for="CleanSheets" class="form-control" />
+                <span asp-validation-for="CleanSheets" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YellowCards" class="control-label"></label>
+                <input asp-for="YellowCards" class="form-control" />
+                <span asp-validation-for="YellowCards" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RedCards" class="control-label"></label>
+                <input asp-for="RedCards" class="form-control" />
+                <span asp-validation-for="RedCards" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Injuried" class="control-label"></label>
+                <input asp-for="Injuried" class="form-control" />
+                <span asp-validation-for="Injuried" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ManOfTheMatch" class="control-label"></label>
+                <input asp-for="ManOfTheMatch" class="form-control" />
+                <span asp-validation-for="ManOfTheMatch" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

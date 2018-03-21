@@ -1,0 +1,324 @@
+﻿@model Project.Models.Player
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2> <a asp-action="Compare" asp-route-id="@Model.PlayerId">
+    <input type="button" id="compareButton" value="Compare" /></a>
+
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Picture)
+            </dt>
+            <dd>
+                <img src="@Html.DisplayFor(model => model.Picture)" />
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.FifaPlayerId)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.FifaPlayerId)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Position)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Position)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Rating)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Rating)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.CardType)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.CardType)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.GamesPlayed)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.GamesPlayed)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Goals)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Goals)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Goalspergame)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Goalspergame)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Assists)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Assists)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Assistspergame)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Assistspergame)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.MatchRating)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MatchRating)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.OwnGoals)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.OwnGoals)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ShotsOnTarget)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ShotsOnTarget)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ShotsOffTarget)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ShotsOffTarget)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PassesCompletedS)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PassesCompletedS)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PassesCompletedM)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PassesCompletedM)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PassesCompletedL)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PassesCompletedL)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PassesFailedS)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PassesFailedS)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PassesFailedM)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PassesFailedM)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PassesFailedL)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PassesFailedL)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.CrossesCompleted)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.CrossesCompleted)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.CrossesFailed)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.CrossesFailed)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.KeyPasses)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.KeyPasses)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DribblesCompleted)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DribblesCompleted)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DribblesAttempted)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DribblesAttempted)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.KeyDribbles)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.KeyDribbles)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.OneOnOneDribbles)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.OneOnOneDribbles)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Fouled)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Fouled)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.TacklesWon)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.TacklesWon)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.TacklesAttempted)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.TacklesAttempted)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Fouls)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Fouls)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PensConceded)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PensConceded)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Interceptions)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Interceptions)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.OutOfPosition)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.OutOfPosition)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Blocks)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Blocks)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PossessionWon)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PossessionWon)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PossessionLost)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PossessionLost)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Clearances)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Clearances)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.HeadersWon)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.HeadersWon)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.HeadersLost)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.HeadersLost)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.GoalsConceded)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.GoalsConceded)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ShotsCaught)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ShotsCaught)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ShotsParried)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ShotsParried)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.CrossesCaught)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.CrossesCaught)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.BallsStripped)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BallsStripped)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.CleanSheets)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.CleanSheets)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.YellowCards)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.YellowCards)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.RedCards)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.RedCards)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Injuried)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Injuried)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ManOfTheMatch)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ManOfTheMatch)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.PlayerId">Update</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
